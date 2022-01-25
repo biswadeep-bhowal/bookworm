@@ -41,7 +41,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
-                'django.template.context_processors.request',
+                'django.template.context_processors.media',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -104,7 +104,7 @@ STATIC_ROOT = BASE_DIR
 STATICFILES_DIRS = [ 'static' ]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = join( BASE_DIR, 'media' )
+MEDIA_ROOT = join( BASE_DIR, 'media/' )
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
